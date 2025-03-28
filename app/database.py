@@ -1,16 +1,14 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 import os
-from dotenv import load_dotenv
 
-# Load environment variables (only needed for local development)
-load_dotenv()
+# Print DATABASE_URL for debugging
+print(f"DATABASE_URL: {os.getenv('DATABASE_URL')}")  # <-- This will print the DATABASE_URL
 
-print(f"DATABASE_URL: {os.getenv('DATABASE_URL')}")  # <-- Add this line
+# Print all environment variables for debugging
 print("All environment variables:")
 for key, value in os.environ.items():
     print(f"{key}: {value}")
-
 
 # Ensure DATABASE_URL is set
 DATABASE_URL = os.getenv("DATABASE_URL")
