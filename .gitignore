@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+*.dll
+*.dylib
+
+# Virtual environment
+venv/
+.env
+*.env
+
+# Database & migrations
+*.db
+*.sqlite3
+migrations/
+
+# Logs & Debugging
+logs/
+*.log
+
+# IDE & Editor files
+.vscode/
+*.swp
+*.swo
+.idea/
+*.iml
+
+# Docker
+*.tar
+*.bak
+*.pid
+
+# Dependencies
+*.egg-info/
+dist/
+build/
+
+# Node (if any frontend assets exist)
+node_modules/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
