@@ -6,6 +6,9 @@ from dotenv import load_dotenv
 # Load environment variables (only needed for local development)
 load_dotenv()
 
+print(f"DATABASE_URL: {os.getenv('DATABASE_URL')}")  # <-- Add this line
+
+
 # Ensure DATABASE_URL is set
 DATABASE_URL = os.getenv("DATABASE_URL")
 if not DATABASE_URL:
