@@ -7,6 +7,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 print(f"DATABASE_URL: {os.getenv('DATABASE_URL')}")  # <-- Add this line
+print("All environment variables:")
+for key, value in os.environ.items():
+    print(f"{key}: {value}")
 
 
 # Ensure DATABASE_URL is set
