@@ -10,8 +10,10 @@ print("All environment variables:")
 for key, value in os.environ.items():
     print(f"{key}: {value}")
 
+# Directly providing the PostgreSQL URL (Replace with your actual URL if not using env variable)
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:WpKDmbEgsugFiIzfhnSZQyeXZksTbUra@postgres-production-25520.up.railway.app:5432/railway")
+
 # Ensure DATABASE_URL is set
-DATABASE_URL = os.getenv("DATABASE_URL")
 if not DATABASE_URL:
     raise ValueError("🚨 DATABASE_URL is not set! Make sure to define it in your Railway environment settings.")
 
