@@ -17,7 +17,8 @@ COPY . .
 EXPOSE 8000
 
 # Set environment variables for production
-ENV DATABASE_URL=${DATABASE_URL}
+ENV DATABASE_URL=postgresql://postgres:WpKDmbEgsugFiIzfhnSZQyeXZksTbUra@postgres-production-25520.up.railway.app:5432/railway
+
 
 # Run migrations before starting the server
 RUN python -m app.database
