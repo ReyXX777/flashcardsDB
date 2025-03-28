@@ -11,7 +11,7 @@ for key, value in os.environ.items():
     print(f"{key}: {value}")
 
 # Directly providing the PostgreSQL URL (Replace with your actual URL if not using env variable)
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:WpKDmbEgsugFiIzfhnSZQyeXZksTbUra@postgres-production-25520.up.railway.app:5432/railway")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:WpKDmbEgsugFiIzfhnSZQyeXZksTbUra@postgres-production-25520.up.railway.app:5432/railway?sslmode=require")
 
 # Ensure DATABASE_URL is set
 if not DATABASE_URL:
